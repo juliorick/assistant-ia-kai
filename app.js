@@ -12,7 +12,7 @@ async function sendMessage() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer VOTRE_CLE_API_OPENAI"
+      "Authorization": "Bearer + process.env.OPENAI_API_KEY"
     },
     body: JSON.stringify({
       model: "gpt-4",
